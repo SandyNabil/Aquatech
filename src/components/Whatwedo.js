@@ -7,7 +7,7 @@ const Whatwedo = () => {
     <div id="Whatwedo" style={{ padding: "100px 0" }}>
       <Container>
         <Typography variant="h2">Section 2</Typography>
-        <Typography variant="body2">I love you BEBOOOOOOO</Typography>
+        <Typography variant="body2"></Typography>
       </Container>
     </div>
   );
