@@ -2,8 +2,8 @@
 import React from "react";
 import Navbar from "./components/Navbar";
 import Introduction from "./components/Introduction";
-import Whatwedo from "./components/Whatwedo";
-import Monitoring from "./components/Monitoring";
+import About from "./components/About";
+import Services from "./components/Services";
 import { CssBaseline } from "@mui/material";
 
 function App() {
@@ -15,8 +15,8 @@ function App() {
         {" "}
         {/* Offset for fixed navbar */}
         <Introduction />
-        <Whatwedo />
-        <Monitoring />
+        <About />
+        <Services />
       </div>
     </div>
   );

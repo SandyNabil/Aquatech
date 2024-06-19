@@ -1,10 +1,10 @@
-// src/components/Monitoring.js
+// src/components/Services.js
 import React from "react";
 import { Container, Typography } from "@mui/material";
 
-const Monitoring = () => {
+const Services = () => {
   return (
-    <div id="Monitoring" style={{ padding: "100px 0" }}>
+    <div id="Services" style={{ padding: "100px 0" }}>
       <Container>
         <Typography variant="h2">Section 3</Typography>
         <Typography variant="body1">Content for Section 3</Typography>
@@ -13,4 +13,4 @@ const Monitoring = () => {
   );
 };
 
-export default Monitoring;
+export default Services;

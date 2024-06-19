@@ -1,40 +1,52 @@
-    // src/theme.js
-    import { createTheme } from "@mui/material/styles";
+// src/theme.js
+import { createTheme } from "@mui/material/styles";
 
-    const theme = createTheme({
-      palette: {
-        primary: {
-          main: "#194662",
-        },
-        background: {
-          default: "#f4f6f8",
-        },
-        text: {
-          primary: "#000",
-          secondary: "#555",
-        },
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: "#194662",
+    },
+    background: {
+      default: "#f4f6f8",
+    },
+    text: {
+      primary: "#000",
+      secondary: "#555",
+    },
+  },
+  typography: {
+    h1: {
+      fontSize: "6rem",
+      fontWeight: 600,
+      textShadow: "2px 2px #6d7676",
+      "@media (max-width: 768px)": {
+        fontSize: "2.5rem",
       },
-      typography: {
-        h1: {
-          fontSize: "6rem",
-          fontWeight: 600,
-          textShadow: "2px 2px #6d7676",
-        },
-        h2: {
-          fontSize: "2rem",
-          fontWeight: 500,
-        },
-        body1: {
-          fontSize: "1.5rem",
-          fontWeight: "bold",
-          color: "white",
-          textShadow: "1px 1px #6d7676",
-        },
-        body2: {
-          fontSize: "8rem",
-          color: "#555",
-        },
+    },
+    h2: {
+      fontSize: "3rem",
+      fontWeight: 500,
+      "@media (max-width: 768px)": {
+        fontSize: "1.5rem",
       },
-    });
+    },
+    body1: {
+      fontSize: "3.5rem",
+      fontWeight: "bold",
+      color: "white",
+      textShadow: "2px 2px #6d7676",
+      "@media (max-width: 768px)": {
+        fontSize: "1.5rem",
+      },
+    },
+    body2: {
+      fontSize: "8rem",
+      color: "#555",
+      "@media (max-width: 768px)": {
+        fontSize: "4rem",
+      },
+    },
+  },
+});
 
-    export default theme;
+export default theme;
