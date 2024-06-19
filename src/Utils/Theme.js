@@ -24,7 +24,7 @@ const theme = createTheme({
       },
     },
     h2: {
-      fontSize: "3rem",
+      fontSize: "4rem",
       fontWeight: 500,
       "@media (max-width: 768px)": {
         fontSize: "1.5rem",
@@ -40,10 +40,10 @@ const theme = createTheme({
       },
     },
     body2: {
-      fontSize: "8rem",
-      color: "#555",
+      fontSize: "1.2rem",
+      color: "#e3e5e5",
       "@media (max-width: 768px)": {
-        fontSize: "4rem",
+        fontSize: "1rem",
       },
     },
   },

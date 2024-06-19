@@ -97,20 +97,16 @@ const Introduction = () => {
         if (currentSlide === 0) {
           setCurrentSlide(totalSlides);
           slideContainerRef.current.style.transition = "none";
-          slideContainerRef.current.style.transform = `translateX(-${
-            totalSlides * 100
-          }%)`;
+          slideContainerRef.current.style.transform = `translateX(-${totalSlides * 100}%)`;
           requestAnimationFrame(() => {
-            slideContainerRef.current.style.transition =
-              "transform 1s ease-in-out";
+            slideContainerRef.current.style.transition = "transform 1s ease-in-out";
           });
         } else if (currentSlide === totalSlides + 1) {
           setCurrentSlide(1);
           slideContainerRef.current.style.transition = "none";
           slideContainerRef.current.style.transform = `translateX(-100%)`;
           requestAnimationFrame(() => {
-            slideContainerRef.current.style.transition =
-              "transform 1s ease-in-out";
+            slideContainerRef.current.style.transition = "transform 1s ease-in-out";
           });
         }
       }, 1000); // Match the transition duration

@@ -1,23 +1,59 @@
 // src/components/About.js
 import React from "react";
-import { Container, Typography, Grid } from "@mui/material"; // Import Grid for layout
+import {
+  Container,
+  Typography,
+  Grid,
+  useMediaQuery,
+  useTheme,
+} from "@mui/material"; // Import Grid for layout
 
 const About = () => {
-  return (
-    <div id="About" style={{ height: "75vh", padding: "100px 0" }}>
-      <Container>
-        {/* Title */}
-        <Typography variant="h2" gutterBottom>
-          What is AQUATECH
-        </Typography>
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
-        {/* Main Content */}
-        <Grid container spacing={4}>
+  return (
+    <div
+      id="About"
+      style={{
+        height: "75vh",
+        padding: "50px 0",
+        background: "#194662",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+      }}
+    >
+      <Container maxWidth="lg">
+        
+        <Grid
+          container
+          spacing={isMobile ? 2 : 4}
+          alignItems="center"
+          justifyContent="space-between"
+        ></Grid>
+        <Grid
+          container
+          spacing={isMobile ? 2 : 4}
+          alignItems="center"
+          sx={{
+            // bgcolor: "grey", // sets background color to grey
+            // borderRadius: "8px", // adds border radius
+            padding: "20px", // adds padding inside the box
+            margin: "auto",
+          }}
+        >
           {/* Left Box for Text */}
           <Grid item xs={12} md={6}>
             <Typography
-              variant="body1"
-              sx={{ fontSize: "1.5rem", lineHeight: 2 }}
+              variant="h2"
+              style={{ color: "#fff", marginBottom: "20px" }}
+            >
+              What is AQUATECH
+            </Typography>
+            <Typography
+              variant="body2"
+              sx={{ color: "#fff", textShadow: "none" }}
             >
               AQUATECH is an innovative initiative dedicated to revolutionizing
               the aquaculture industry through the development of a fully
@@ -38,12 +74,30 @@ const About = () => {
           </Grid>
 
           {/* Right Box for Image */}
-          <Grid item xs={12} md={6}>
-            <img
-              src="/aquarium.jpg"
-              alt="Aquarium"
-              style={{ width: "100%", height: "100%", objectFit: "cover" }}
-            />
+          <Grid
+            item
+            xs={12}
+            md={6}
+            sx={{
+              // bgcolor: "grey", // sets background color to grey
+              // borderRadius: "8px", // adds border radius
+              display: "flex",
+              justifyContent: "center",
+              padding: "20px", // adds padding inside the box
+              margin: "auto", // centers the box in the available space
+            }}
+          >
+            <div style={{ display: "flex", justifyContent: "center" }}>
+              <img
+                src="/favicon.png"
+                alt="Aquarium"
+                style={{
+                  maxWidth: "100%",
+                  maxHeight: "100%",
+                  objectFit: "cover",
+                }}
+              />
+            </div>
           </Grid>
         </Grid>
       </Container>
