@@ -76,8 +76,10 @@ const Services = () => {
               marginBottom: "20px", // Added margin between boxes
               borderRadius: "10px",
               overflow: "hidden",
-              // boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)", // Added box shadow
               bgcolor: "#ffffff",
+              // boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)", // Added box shadow
+              display: "flex",
+              flexDirection: "column",
             }}
           >
             {/* Image Box */}
@@ -88,7 +90,6 @@ const Services = () => {
                 overflow: "hidden",
                 bgcolor: "#ffffff",
                 // boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)", // Added box shadow
-                // borderRight: "ridge 3px #194662", // Ridge border on the right side only
               }}
             >
               <img
@@ -99,6 +100,8 @@ const Services = () => {
                   height: "auto",
                   objectFit: "cover",
                   borderBottom: "none", // Remove border from the bottom of the image
+                  borderTopLeftRadius: "10px", // Adjusted top left and right border radius for image
+                  borderTopRightRadius: "10px",
                 }}
               />
             </Box>
@@ -110,6 +113,8 @@ const Services = () => {
                 color: "#fff",
                 padding: "10px",
                 textAlign: "center",
+                borderTopLeftRadius: "10px", // Adjusted top left and right border radius for text box
+                borderTopRightRadius: "10px",
               }}
             >
               <Typography variant="h6" sx={{ marginBottom: "5px" }}>
@@ -121,7 +126,7 @@ const Services = () => {
                 backgroundColor: "#f4f6f8",
                 padding: "10px",
                 textAlign: "center",
-                boxShadow: "4px 4px 8px rgba(0, 0, 0, 0.1)", // Added box shadow
+                boxShadow: "4px 4px 8px rgba(0, 0, 0, 0.5)", // Added box shadow
                 border: "doubled 3px #194662", // Ridge border on the right side only
               }}
             >
