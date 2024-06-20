@@ -122,7 +122,7 @@ const Services = () => {
                 padding: "10px",
                 textAlign: "center",
                 boxShadow: "4px 4px 8px rgba(0, 0, 0, 0.1)", // Added box shadow
-                border: "ridge 3px #194662", // Ridge border on the right side only
+                border: "doubled 3px #194662", // Ridge border on the right side only
               }}
             >
               <Typography variant="body2">{service.description}</Typography>
