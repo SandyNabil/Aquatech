@@ -10,13 +10,13 @@ const About = () => {
     <div
       id="About"
       style={{
-        height: "auto", // Changed from 75vh to auto for better responsiveness
         minHeight: "75vh",
         padding: "50px 0",
         background: "#f4f6f8",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
+        marginBottom: "50px", // Added spacing between sections
       }}
     >
       <div
@@ -49,7 +49,7 @@ const About = () => {
           >
             What is AQUATECH
           </Typography>
-          <Typography variant="body2" sx={{ color: "#333" }}>
+          <Typography variant="body2" >
             AQUATECH is an innovative initiative dedicated to revolutionizing
             the aquaculture industry through the development of a fully
             automated recirculating aquarium system. Our cutting-edge technology
@@ -70,13 +70,13 @@ const About = () => {
         {/* Right Box for Image */}
         <Box
           sx={{
-            width: isMobile ? "100%" : "50%",
+            width: isMobile ? "100%" : "45%",
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
             padding: "20px",
-            // border: "1vh ridge #194662",
-            // borderRadius: "10%",
+            border: "1vh ridge #194662",
+            borderRadius: "10%",
           }}
         >
           <img
@@ -84,7 +84,7 @@ const About = () => {
             alt="Aquarium"
             style={{
               maxWidth: "100%",
-              height: "100%",
+              height: "auto",
               objectFit: "cover",
             }}
           />

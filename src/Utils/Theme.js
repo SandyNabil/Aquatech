@@ -42,7 +42,7 @@ const theme = createTheme({
     },
     body2: {
       fontSize: "1.2rem",
-      color: "#e3e5e5",
+      color: "#333",
       textShadow: "none",
       fontFamily:"Times",
       fontWeight:"bold",
