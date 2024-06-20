@@ -69,12 +69,12 @@ const Introduction = () => {
   const totalSlides = slides.length;
   const slideContainerRef = useRef(null);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      handleNext();
-    }, 3000); // Change slide every 3 seconds
-    return () => clearInterval(interval);
-  }, []);
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     handleNext();
+  //   }, 3000); // Change slide every 3 seconds
+  //   return () => clearInterval(interval);
+  // }, []);
 
   const handlePrev = () => {
     if (!isTransitioning) {
@@ -97,16 +97,20 @@ const Introduction = () => {
         if (currentSlide === 0) {
           setCurrentSlide(totalSlides);
           slideContainerRef.current.style.transition = "none";
-          slideContainerRef.current.style.transform = `translateX(-${totalSlides * 100}%)`;
+          slideContainerRef.current.style.transform = `translateX(-${
+            totalSlides * 100
+          }%)`;
           requestAnimationFrame(() => {
-            slideContainerRef.current.style.transition = "transform 1s ease-in-out";
+            slideContainerRef.current.style.transition =
+              "transform 1s ease-in-out";
           });
         } else if (currentSlide === totalSlides + 1) {
           setCurrentSlide(1);
           slideContainerRef.current.style.transition = "none";
           slideContainerRef.current.style.transform = `translateX(-100%)`;
           requestAnimationFrame(() => {
-            slideContainerRef.current.style.transition = "transform 1s ease-in-out";
+            slideContainerRef.current.style.transition =
+              "transform 1s ease-in-out";
           });
         }
       }, 1000); // Match the transition duration
