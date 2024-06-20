@@ -10,20 +10,20 @@ const About = () => {
     <div
       id="About"
       style={{
-        height: "75vh",
-        width:"100%",
+        height: "auto", // Changed from 75vh to auto for better responsiveness
+        minHeight: "75vh",
         padding: "50px 0",
         background: "#f4f6f8",
         display: "flex",
         alignItems: "center",
-        justifyContent: "space-around",
+        justifyContent: "center",
       }}
     >
       <div
         style={{
           display: "flex",
           flexDirection: isMobile ? "column" : "row",
-          // justifyContent: "space-evenly",
+          justifyContent: "space-around",
           alignItems: "center",
           width: "100%",
           maxWidth: "1200px",
@@ -32,16 +32,15 @@ const About = () => {
         {/* Left Box for Text */}
         <Box
           sx={{
-            width: isMobile ? "100%" : "50%",
+            width: isMobile ? "100%" : "45%",
             display: "flex",
             flexDirection: "column",
             justifyContent: "center",
             padding: "20px",
             textAlign: isMobile ? "center" : "left",
-            // bgcolor: "white",
             border: "1vh ridge #194662",
             borderRadius: "10%",
-            marginTop:"2vh",
+            marginBottom: isMobile ? "20px" : "0", // Add margin at the bottom for mobile
           }}
         >
           <Typography
@@ -76,6 +75,8 @@ const About = () => {
             justifyContent: "center",
             alignItems: "center",
             padding: "20px",
+            // border: "1vh ridge #194662",
+            // borderRadius: "10%",
           }}
         >
           <img
@@ -83,7 +84,7 @@ const About = () => {
             alt="Aquarium"
             style={{
               maxWidth: "100%",
-              height: "auto",
+              height: "100%",
               objectFit: "cover",
             }}
           />
