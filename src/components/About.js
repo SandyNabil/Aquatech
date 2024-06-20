@@ -1,12 +1,6 @@
 // src/components/About.js
 import React from "react";
-import {
-  Container,
-  Typography,
-  Grid,
-  useMediaQuery,
-  useTheme,
-} from "@mui/material"; // Import Grid for layout
+import { Typography, Box, useMediaQuery, useTheme } from "@mui/material";
 
 const About = () => {
   const theme = useTheme();
@@ -17,90 +11,84 @@ const About = () => {
       id="About"
       style={{
         height: "75vh",
+        width:"100%",
         padding: "50px 0",
-        background: "#194662",
+        background: "#f4f6f8",
         display: "flex",
         alignItems: "center",
-        justifyContent: "center",
+        justifyContent: "space-around",
       }}
     >
-      <Container maxWidth="lg">
-        
-        <Grid
-          container
-          spacing={isMobile ? 2 : 4}
-          alignItems="center"
-          justifyContent="space-between"
-        ></Grid>
-        <Grid
-          container
-          spacing={isMobile ? 2 : 4}
-          alignItems="center"
+      <div
+        style={{
+          display: "flex",
+          flexDirection: isMobile ? "column" : "row",
+          // justifyContent: "space-evenly",
+          alignItems: "center",
+          width: "100%",
+          maxWidth: "1200px",
+        }}
+      >
+        {/* Left Box for Text */}
+        <Box
           sx={{
-            // bgcolor: "grey", // sets background color to grey
-            // borderRadius: "8px", // adds border radius
-            padding: "20px", // adds padding inside the box
-            margin: "auto",
+            width: isMobile ? "100%" : "50%",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            padding: "20px",
+            textAlign: isMobile ? "center" : "left",
+            // bgcolor: "white",
+            border: "1vh ridge #194662",
+            borderRadius: "10%",
+            marginTop:"2vh",
           }}
         >
-          {/* Left Box for Text */}
-          <Grid item xs={12} md={6}>
-            <Typography
-              variant="h2"
-              style={{ color: "#fff", marginBottom: "20px" }}
-            >
-              What is AQUATECH
-            </Typography>
-            <Typography
-              variant="body2"
-              sx={{ color: "#fff", textShadow: "none" }}
-            >
-              AQUATECH is an innovative initiative dedicated to revolutionizing
-              the aquaculture industry through the development of a fully
-              automated recirculating aquarium system. Our cutting-edge
-              technology integrates advanced water adjustment stages,
-              high-efficiency oxygenation, and precise environmental controls to
-              cultivate high-quality fish at optimal densities. Utilizing
-              Programmable Logic Controllers (PLC), specialized sensors, SCADA
-              systems, and Industrial Internet of Things (IIOT) web and mobile
-              applications, our system ensures superior fish health and growth.
-              Additionally, the incorporation of solar power enhances
-              sustainability and reduces operational costs. AQUATECH not only
-              addresses the challenges of traditional fish farming but also
-              aligns with Egypt's 2030 vision for sustainable development,
-              aiming to boost the country's economic growth and global
-              competitiveness in aquaculture.
-            </Typography>
-          </Grid>
-
-          {/* Right Box for Image */}
-          <Grid
-            item
-            xs={12}
-            md={6}
-            sx={{
-              // bgcolor: "grey", // sets background color to grey
-              // borderRadius: "8px", // adds border radius
-              display: "flex",
-              justifyContent: "center",
-              padding: "20px", // adds padding inside the box
-              margin: "auto", // centers the box in the available space
-            }}
+          <Typography
+            variant="h2"
+            sx={{ color: "#194662", marginBottom: "20px" }}
           >
-            <div style={{ display: "flex", justifyContent: "center" }}>
-              <img
-                src="/favicon.png"
-                alt="Aquarium"
-                style={{
-                  maxWidth: "100%",
-                  maxHeight: "100%",
-                  objectFit: "cover",
-                }}
-              />
-            </div>
-          </Grid>
-        </Grid>
-      </Container>
+            What is AQUATECH
+          </Typography>
+          <Typography variant="body2" sx={{ color: "#333" }}>
+            AQUATECH is an innovative initiative dedicated to revolutionizing
+            the aquaculture industry through the development of a fully
+            automated recirculating aquarium system. Our cutting-edge technology
+            integrates advanced water adjustment stages, high-efficiency
+            oxygenation, and precise environmental controls to cultivate
+            high-quality fish at optimal densities. Utilizing Programmable Logic
+            Controllers (PLC), specialized sensors, SCADA systems, and
+            Industrial Internet of Things (IIOT) web and mobile applications,
+            our system ensures superior fish health and growth. Additionally,
+            the incorporation of solar power enhances sustainability and reduces
+            operational costs. AQUATECH not only addresses the challenges of
+            traditional fish farming but also aligns with Egypt's 2030 vision
+            for sustainable development, aiming to boost the country's economic
+            growth and global competitiveness in aquaculture.
+          </Typography>
+        </Box>
+
+        {/* Right Box for Image */}
+        <Box
+          sx={{
+            width: isMobile ? "100%" : "50%",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            padding: "20px",
+          }}
+        >
+          <img
+            src="/favicon.png"
+            alt="Aquarium"
+            style={{
+              maxWidth: "100%",
+              height: "auto",
+              objectFit: "cover",
+            }}
+          />
+        </Box>
+      </div>
     </div>
   );
 };

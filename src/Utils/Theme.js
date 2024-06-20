@@ -25,9 +25,10 @@ const theme = createTheme({
     },
     h2: {
       fontSize: "4rem",
-      fontWeight: 500,
+      fontWeight: 600,
       "@media (max-width: 768px)": {
         fontSize: "1.5rem",
+        textShadow: "2px 2px #6d7676",
       },
     },
     body1: {
@@ -42,6 +43,9 @@ const theme = createTheme({
     body2: {
       fontSize: "1.2rem",
       color: "#e3e5e5",
+      textShadow: "none",
+      fontFamily:"Times",
+      fontWeight:"bold",
       "@media (max-width: 768px)": {
         fontSize: "1rem",
       },
