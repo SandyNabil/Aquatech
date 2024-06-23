@@ -50,6 +50,15 @@ const theme = createTheme({
         fontSize: "1rem",
       },
     },
+    // body3: {
+    //   fontSize: "2.5rem",
+    //   textShadow: "none",
+    //   fontFamily:"Times",
+    //   fontWeight:"bold",
+    //   "@media (max-width: 768px)": {
+    //     fontSize: "1rem",
+    //   },
+    // },
   },
 });
 

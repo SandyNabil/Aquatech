@@ -7,7 +7,7 @@
     marginBottom: "50px",
     display: "grid",
     gridTemplateColumns: "1fr 1fr 1fr", // Three equal columns
-    gap: theme.spacing(0.2), // Gap between sections
+    gap: theme.spacing(0.1), // Gap between sections
     [theme.breakpoints.down("sm")]: {
         gridTemplateColumns: "1fr", // Stack on small screens
         height: "auto", // Auto height for stacking
