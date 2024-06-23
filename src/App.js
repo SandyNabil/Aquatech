@@ -7,6 +7,7 @@ import Services from "./components/Services";
 import { CssBaseline } from "@mui/material";
 import Sponsors from "./components/Sponsors";
 import Contact from "./components/Contact";
+import EgyptVision from "./components/EgyptVision";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Introduction />
         <About />
         <Services />
+        <EgyptVision/>
         <Sponsors />
         <Contact/>
       </div>

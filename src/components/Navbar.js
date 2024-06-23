@@ -110,6 +110,12 @@
               </Button>
               <Button
                 color="inherit"
+                onClick={() => scrollToSection("Services")}
+              >
+                Vision 2030
+              </Button>
+              <Button
+                color="inherit"
                 onClick={() => scrollToSection("Sponsors")}
               >
                 Sponsors
