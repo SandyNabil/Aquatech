@@ -22,7 +22,7 @@ const Sponsors = () => {
               <img
                 src="/asrt.png" // Replace with actual image path
                 alt="ASRT"
-                style={{ width: "200px", height: "200px", borderRadius: "50%" }}
+                style={{ width: "300px", height: "250px", borderRadius: "25%" }}
               />
               <Typography
                 variant="h4"
@@ -39,7 +39,7 @@ const Sponsors = () => {
               <img
                 src="/sanofi.png" // Replace with actual image path
                 alt="Sanofi Green"
-                style={{ width: "200px", height: "200px", borderRadius: "50%" }}
+                style={{ width: "300px", height: "250px", borderRadius: "25%" }}
               />
               <Typography
                 variant="h4"
@@ -56,7 +56,7 @@ const Sponsors = () => {
               <img
                 src="/ecct.png" // Replace with actual image path
                 alt="Ecct panel builder"
-                style={{ width: "200px", height: "200px", borderRadius: "50%" }}
+                style={{ width: "300px", height: "250px", borderRadius: "25%" }}
               />
               <Typography
                 variant="h4"
