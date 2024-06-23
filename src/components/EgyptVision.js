@@ -23,7 +23,8 @@
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
-    alignItems: "center",
+        alignItems: "center",
+    textAlign:"center",
     padding: theme.spacing(4),
     clipPath: clipPath, // Adjusting clip path dynamically
     [theme.breakpoints.down("sm")]: {
