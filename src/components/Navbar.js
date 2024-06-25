@@ -79,20 +79,25 @@ const Navbar = () => {
         justifyContent: "space-evenly",
       }}
     >
-      {["Introduction", "About", "Services", "Sponsors", "Contact"].map(
-        (text) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton onClick={() => scrollToSection(text)}>
-              <CustomListItemText
-                primary={text}
-                sx={{
-                  color: activeSection === text ? "white" : "#8ca3b1",
-                }}
-              />
-            </ListItemButton>
-          </ListItem>
-        )
-      )}
+      {[
+        "Introduction",
+        "About",
+        "Services",
+        "EgyptVision",
+        "Sponsors",
+        "Contact",
+      ].map((text) => (
+        <ListItem key={text} disablePadding>
+          <ListItemButton onClick={() => scrollToSection(text)}>
+            <CustomListItemText
+              primary={text}
+              sx={{
+                color: activeSection === text ? "white" : "#8ca3b1",
+              }}
+            />
+          </ListItemButton>
+        </ListItem>
+      ))}
     </List>
   );
 
@@ -133,7 +138,7 @@ const Navbar = () => {
               "Introduction",
               "About",
               "Services",
-              "Vision 2030",
+              "EgyptVision",
               "Sponsors",
               "Contact",
             ].map((section) => (
