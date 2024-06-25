@@ -13,25 +13,25 @@ const servicesData = [
     title: "Enhanced Water Quality Management",
     description:
       "The system employs automated monitoring and adjustment of critical water parameters such as temperature, pH, dissolved oxygen, salinity, and flow rates. These adjustments ensure optimal conditions for fish growth and health, leading to superior quality fish.",
-    image: "/fish1.png",
+    image: "/logo1.png",
   },
   {
     title: "Increased Fish Density and Yield",
     description:
       "By implementing high-efficiency oxygenation methods and precise environmental controls, the system supports a higher density of fish per square meter. This results in increased yield and productivity, making fish farming more profitable and sustainable.",
-    image: "/fish1.png",
+    image: "/logo2.png",
   },
   {
     title: "Comprehensive Control Integration",
     description:
       "The project features an integrated control system combining PLCs, SCADA, IIOT applications, and solar energy. This holistic approach reduces operational costs, enhances system reliability, and supports remote monitoring and management via web and mobile platforms.",
-    image: "/fish1.png",
+    image: "/logo4.png",
   },
   {
     title: "Sustainability and Economic Efficiency",
     description:
       "The incorporation of solar energy not only reduces the dependency on conventional power sources but also cuts down operational expenses, making the system economically viable. The sustainable design ensures minimal environmental impact, aligning with global ecological standards.",
-    image: "/fish1.png",
+    image: "/logo3.png",
   },
 ];
 
