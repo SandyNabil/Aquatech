@@ -49,7 +49,7 @@
 
         <Section id="EgyptVision">
           <Part
-            imageUrl="intro.png"
+            imageUrl="underwater.png"
             clipPath="polygon(90% 100%, 0 100%, 0 0, 100% 0)"
           >
             <Container>
@@ -66,7 +66,7 @@
             </Container>
           </Part>
           <Part
-            imageUrl="sea.png"
+            imageUrl="new1.png"
             clipPath="polygon(10% 0, 100% 0, 90% 100%, 0 100%);"
           >
             <Container>
@@ -84,7 +84,7 @@
             </Container>
           </Part>
           <Part
-            imageUrl="slide3.png"
+            imageUrl="underwater2.png"
             clipPath="polygon(100% 100%, 0 100%, 10% 0 ,100% 0 )"
           >
             <Container>
