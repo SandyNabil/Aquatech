@@ -63,7 +63,7 @@ const theme = createTheme({
       textShadow: "none",
       fontFamily: "Times",
       fontWeight: "bold",
-      color: "#9a9a9a",
+      color: "#d4d4d4",
       "@media (max-width: 768px)": {
         fontSize: "1rem",
       },
