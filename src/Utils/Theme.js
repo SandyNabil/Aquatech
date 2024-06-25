@@ -31,6 +31,14 @@ const theme = createTheme({
         textShadow: "2px 2px #6d7676",
       },
     },
+    h5: {
+      fontSize: "2rem",
+      fontWeight: 600,
+      "@media (max-width: 768px)": {
+        fontSize: "1.5rem",
+        textShadow: "2px 2px #6d7676",
+      },
+    },
     body1: {
       fontSize: "3.5rem",
       fontWeight: "bold",
@@ -44,21 +52,22 @@ const theme = createTheme({
       fontSize: "1.2rem",
       color: "#333",
       textShadow: "none",
-      fontFamily:"Times",
-      fontWeight:"bold",
+      fontFamily: "Times",
+      fontWeight: "bold",
       "@media (max-width: 768px)": {
         fontSize: "1rem",
       },
     },
-    // body3: {
-    //   fontSize: "2.5rem",
-    //   textShadow: "none",
-    //   fontFamily:"Times",
-    //   fontWeight:"bold",
-    //   "@media (max-width: 768px)": {
-    //     fontSize: "1rem",
-    //   },
-    // },
+    h6: {
+      fontSize: "1.3rem",
+      textShadow: "none",
+      fontFamily: "Times",
+      fontWeight: "bold",
+      color: "#9a9a9a",
+      "@media (max-width: 768px)": {
+        fontSize: "1rem",
+      },
+    },
   },
 });
 

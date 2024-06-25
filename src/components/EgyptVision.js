@@ -56,7 +56,7 @@
               <Typography variant="h5">
                 Alignment with Egypt Vision 2030: Water Conservation
               </Typography>
-              <Typography variant="body2">
+              <Typography variant="h6">
                 AQUATECH’s recirculating aquarium system significantly reduces
                 water usage by continuously filtering and reusing water. This
                 approach aligns with Egypt Vision 2030’s focus on sustainable
@@ -73,7 +73,7 @@
               <Typography variant="h5">
                 Alignment with Egypt Vision 2030: Green Energy
               </Typography>
-              <Typography variant="body2">
+              <Typography variant="h6">
                 Incorporating solar energy into AQUATECH's system demonstrates
                 our commitment to green energy solutions, reducing reliance on
                 non-renewable sources and cutting operational costs. This
@@ -91,7 +91,7 @@
               <Typography variant="h5">
                 Alignment with Egypt Vision 2030: Food Security and Quality
               </Typography>
-              <Typography variant="body2">
+              <Typography variant="h6">
                 AQUATECH enhances food security and quality by producing
                 high-quality fish through optimal water and oxygen conditions.
                 This aligns with Egypt Vision 2030’s objectives to improve local
