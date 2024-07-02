@@ -35,7 +35,7 @@ const Contact = () => {
           <Grid item>
             <Box display="flex" alignItems="center">
               <IconButton
-                href="mailto:magicalcontact@gmail.com"
+                href="Abanoubgirgisabanoub@gmail.com"
                 sx={{ color: "#fff" }}
               >
                 <EmailIcon sx={{ fontSize: 45, color: "red" }} />
@@ -49,7 +49,7 @@ const Contact = () => {
                   textShadow: "none",
                 }}
               >
-                magicalcontact@gmail.com
+                Abanoubgirgisabanoub@gmail.com
               </Typography>
             </Box>
           </Grid>
