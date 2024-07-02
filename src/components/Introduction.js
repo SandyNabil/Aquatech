@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useState, useRef } from "react";
 import { Container, Typography, useMediaQuery, useTheme } from "@mui/material";
 import { styled } from "@mui/material/styles";
 
@@ -61,62 +61,18 @@ const slides = [
 
 const Introduction = () => {
   const [currentSlide, setCurrentSlide] = useState(1);
-  const [isTransitioning, setIsTransitioning] = useState(false);
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
-
   const totalSlides = slides.length;
   const slideContainerRef = useRef(null);
 
-  // Commented out the automatic sliding effect
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     handleNext();
-  //   }, 3000); // Change slide every 3 seconds
-  //   return () => clearInterval(interval);
-  // }, []);
-
   const handlePrev = () => {
-    if (!isTransitioning) {
-      setIsTransitioning(true);
-      setCurrentSlide((prev) => prev - 1);
-    }
+    setCurrentSlide((prev) => (prev === 1 ? totalSlides : prev - 1));
   };
 
   const handleNext = () => {
-    if (!isTransitioning) {
-      setIsTransitioning(true);
-      setCurrentSlide((prev) => prev + 1);
-    }
+    setCurrentSlide((prev) => (prev === totalSlides ? 1 : prev + 1));
   };
-
-  useEffect(() => {
-    if (isTransitioning) {
-      const timeout = setTimeout(() => {
-        setIsTransitioning(false);
-        if (currentSlide === 0) {
-          setCurrentSlide(totalSlides);
-          slideContainerRef.current.style.transition = "none";
-          slideContainerRef.current.style.transform = `translateX(-${
-            totalSlides * 100
-          }%)`;
-          requestAnimationFrame(() => {
-            slideContainerRef.current.style.transition =
-              "transform 1s ease-in-out";
-          });
-        } else if (currentSlide === totalSlides + 1) {
-          setCurrentSlide(1);
-          slideContainerRef.current.style.transition = "none";
-          slideContainerRef.current.style.transform = `translateX(-100%)`;
-          requestAnimationFrame(() => {
-            slideContainerRef.current.style.transition =
-              "transform 1s ease-in-out";
-          });
-        }
-      }, 1000); // Match the transition duration
-      return () => clearTimeout(timeout);
-    }
-  }, [isTransitioning, currentSlide, totalSlides]);
 
   return (
     <Section id="Introduction">
@@ -127,7 +83,7 @@ const Introduction = () => {
         ref={slideContainerRef}
         style={{
           transform: `translateX(-${currentSlide * 100}%)`,
-          transition: isTransitioning ? "transform 1s ease-in-out" : "none",
+          transition: "transform 1s ease-in-out",
         }}
       >
         {[slides[totalSlides - 1], ...slides, slides[0]].map((slide, index) => (
