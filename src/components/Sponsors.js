@@ -9,7 +9,7 @@ const Sponsors = () => {
         {/* Section Title */}
         <Typography
           variant="h2"
-          sx={{ color: "#194662", marginBottom: "5vh", textAlign: "center" }}
+          sx={{ color: "#194662", marginBottom: "20px", textAlign: "center" }}
         >
           Sponsors
         </Typography>
