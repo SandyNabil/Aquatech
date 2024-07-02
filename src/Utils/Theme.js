@@ -26,9 +26,9 @@ const theme = createTheme({
     h2: {
       fontSize: "4rem",
       fontWeight: 600,
+      textShadow:"none",
       "@media (max-width: 768px)": {
-        fontSize: "1.5rem",
-        textShadow: "2px 2px #6d7676",
+        fontSize: "2rem",
       },
     },
     h5: {
@@ -36,7 +36,7 @@ const theme = createTheme({
       fontWeight: 600,
       "@media (max-width: 768px)": {
         fontSize: "1.5rem",
-        textShadow: "2px 2px #6d7676",
+        // textShadow: "2px 2px #6d7676"
       },
     },
     body1: {

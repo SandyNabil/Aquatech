@@ -9,7 +9,7 @@ const Sponsors = () => {
         {/* Section Title */}
         <Typography
           variant="h2"
-          sx={{ color: "#194662", marginBottom: "20px", textAlign: "center" }}
+          sx={{ color: "#194662", marginBottom: "5vh", textAlign: "center" }}
         >
           Sponsors
         </Typography>
@@ -26,7 +26,12 @@ const Sponsors = () => {
               />
               <Typography
                 variant="h4"
-                sx={{ marginTop: "10px", color: "#194662", fontWeight: "bold" }}
+                sx={{
+                  marginTop: "10px",
+                  color: "#194662",
+                  fontWeight: "bold",
+                  textShadow: "none",
+                }}
               >
                 ASRT icon
               </Typography>
@@ -43,7 +48,12 @@ const Sponsors = () => {
               />
               <Typography
                 variant="h4"
-                sx={{ marginTop: "10px", color: "#194662", fontWeight: "bold" }}
+                sx={{
+                  marginTop: "10px",
+                  color: "#194662",
+                  fontWeight: "bold",
+                  textShadow: "none",
+                }}
               >
                 Sanofi green
               </Typography>
@@ -60,7 +70,12 @@ const Sponsors = () => {
               />
               <Typography
                 variant="h4"
-                sx={{ marginTop: "10px", color: "#194662", fontWeight: "bold" }}
+                sx={{
+                  marginTop: "10px",
+                  color: "#194662",
+                  fontWeight: "bold",
+                  textShadow: "none",
+                }}
               >
                 Ecct panel builder
               </Typography>

@@ -23,7 +23,7 @@ const Contact = () => {
           sx={{
             marginBottom: "20px",
             textAlign: "center",
-            fontWeight: "bolder",
+            fontWeight: "bold",
           }}
         >
           Contact Us
@@ -69,7 +69,7 @@ const Contact = () => {
                   textShadow: "none",
                 }}
               >
-                +20 123 456 7890
+                +20 128 699 7506
               </Typography>
             </Box>
           </Grid>
@@ -77,7 +77,7 @@ const Contact = () => {
           <Grid item>
             <Box display="flex" alignItems="center">
               <IconButton
-                href="https://www.facebook.com/magicalcontact1"
+                href="https://www.facebook.com/abanoub.girgis.56"
                 target="_blank"
                 rel="noopener noreferrer"
                 sx={{ color: "#fff" }}
@@ -93,7 +93,7 @@ const Contact = () => {
                   textShadow: "none",
                 }}
               >
-                magicalcontact1
+                Abanoub Girgis
               </Typography>
             </Box>
           </Grid>
