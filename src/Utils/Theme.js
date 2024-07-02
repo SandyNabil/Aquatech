@@ -68,6 +68,16 @@ const theme = createTheme({
         fontSize: "1rem",
       },
     },
+    h3: {
+      fontSize: "1.3rem",
+      textShadow: "none",
+      fontFamily: "Arial",
+      fontWeight: "bold",
+      color: "#d4d4d4",
+      "@media (max-width: 768px)": {
+        fontSize: "1rem",
+      },
+    },
   },
 });
 
