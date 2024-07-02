@@ -1,11 +1,21 @@
-// src/components/Contact.js
 import React from "react";
-import { Container, Typography, Grid, Box, IconButton } from "@mui/material";
+import {
+  Container,
+  Typography,
+  Grid,
+  Box,
+  IconButton,
+  useMediaQuery,
+  useTheme,
+} from "@mui/material";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import EmailIcon from "@mui/icons-material/Email";
 import PhoneIcon from "@mui/icons-material/Phone";
 
 const Contact = () => {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+
   return (
     <div
       id="Contact"
@@ -30,12 +40,17 @@ const Contact = () => {
         </Typography>
 
         {/* Grid for Contact Details */}
-        <Grid container direction="column" alignItems="center" spacing={2}>
+        <Grid
+          container
+          direction="column"
+          alignItems={isMobile ? "flex-start" : "center"}
+          spacing={2}
+        >
           {/* Gmail */}
           <Grid item>
             <Box display="flex" alignItems="center">
               <IconButton
-                href="Abanoubgirgisabanoub@gmail.com"
+                href="mailto:Abanoubgirgisabanoub@gmail.com"
                 sx={{ color: "#fff" }}
               >
                 <EmailIcon sx={{ fontSize: 45, color: "red" }} />
@@ -44,7 +59,7 @@ const Contact = () => {
                 variant="body1"
                 sx={{
                   marginLeft: "15px",
-                  fontSize: "1.5rem",
+                  fontSize: isMobile ? "1rem" : "1.5rem", // Smaller font size for mobile
                   color: "#BBBBBB",
                   textShadow: "none",
                 }}
@@ -64,7 +79,7 @@ const Contact = () => {
                 variant="body1"
                 sx={{
                   marginLeft: "15px",
-                  fontSize: "2rem",
+                  fontSize: isMobile ? "1.5rem" : "2rem", // Adjust font size for mobile
                   color: "#BBBBBB",
                   textShadow: "none",
                 }}
@@ -88,7 +103,7 @@ const Contact = () => {
                 variant="body1"
                 sx={{
                   marginLeft: "15px",
-                  fontSize: "2rem",
+                  fontSize: isMobile ? "1.5rem" : "2rem", // Adjust font size for mobile
                   color: "#BBBBBB",
                   textShadow: "none",
                 }}
