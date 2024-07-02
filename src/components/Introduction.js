@@ -56,7 +56,7 @@ const Arrow = styled("div")({
 const slides = [
   { text: "Digitalized fisheries technologies", img: "/intro.png" },
   { text: "Fish quality solutions", img: "/new1.png" },
-  { text: "Innovative sustainable devices", img: "/slide3.png" },
+  { text: "Innovative sustainable devices", img: "/slide.png" },
   { text: "Precision Engineering design", img: "/new.png" },
 ];
 
