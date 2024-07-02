@@ -1,83 +1,114 @@
-// src/components/Sponsors.js
 import React from "react";
-import { Container, Typography, Grid, Box } from "@mui/material"; // Assuming you use Material-UI
+import {
+  Container,
+  Typography,
+  Grid,
+  Box,
+  IconButton,
+  useMediaQuery,
+  useTheme,
+} from "@mui/material";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import EmailIcon from "@mui/icons-material/Email";
+import PhoneIcon from "@mui/icons-material/Phone";
 
-const Sponsors = () => {
+const Contact = () => {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+
   return (
-    <div id="Sponsors" style={{ padding: "100px 0" }}>
+    <div
+      id="Contact"
+      style={{
+        padding: "20px 0",
+        backgroundColor: "#194662",
+        color: "#fff",
+        minHeight: "20vh",
+      }}
+    >
       <Container>
         {/* Section Title */}
         <Typography
           variant="h2"
-          sx={{ color: "#194662", marginBottom: "20px", textAlign: "center" }}
+          sx={{
+            marginBottom: "20px",
+            textAlign: "center",
+            fontWeight: "bold",
+          }}
         >
-          Sponsors
+          Contact Us
         </Typography>
 
-        {/* Grid for Sponsors */}
-        <Grid container spacing={3} justifyContent="center">
-          {/* Sponsor 1 */}
-          <Grid item xs={12} sm={6} md={4}>
-            <Box textAlign="center">
-              <img
-                src="/asrt.png" // Replace with actual image path
-                alt="ASRT"
-                style={{ width: "300px", height: "250px", borderRadius: "10%" }}
-              />
+        {/* Grid for Contact Details */}
+        <Grid
+          container
+          direction="column"
+          alignItems={isMobile ? "flex-start" : "center"}
+          spacing={2}
+        >
+          {/* Gmail */}
+          <Grid item>
+            <Box display="flex" alignItems="center">
+              <IconButton
+                href="mailto:Abanoubgirgisabanoub@gmail.com"
+                sx={{ color: "#fff" }}
+              >
+                <EmailIcon sx={{ fontSize: 45, color: "red" }} />
+              </IconButton>
               <Typography
-                variant="h4"
+                variant="body1"
                 sx={{
-                  marginTop: "10px",
-                  color: "#194662",
-                  fontWeight: "bold",
+                  marginLeft: isMobile ? "5px" : "15px",
+                  fontSize: isMobile ? "1rem" : "1.5rem", // Smaller font size for mobile
+                  color: "#BBBBBB",
                   textShadow: "none",
                 }}
               >
-                ASRT icon
+                Abanoubgirgisabanoub@gmail.com
               </Typography>
             </Box>
           </Grid>
 
-          {/* Sponsor 2 */}
-          <Grid item xs={12} sm={6} md={4}>
-            <Box textAlign="center">
-              <img
-                src="/sanofi.png" // Replace with actual image path
-                alt="Sanofi Green"
-                style={{ width: "300px", height: "250px", borderRadius: "10%" }}
-              />
+          {/* Phone */}
+          <Grid item>
+            <Box display="flex" alignItems="center">
+              <IconButton sx={{ color: "#fff" }}>
+                <PhoneIcon sx={{ fontSize: 50, color: "green" }} />
+              </IconButton>
               <Typography
-                variant="h4"
+                variant="body1"
                 sx={{
-                  marginTop: "10px",
-                  color: "#194662",
-                  fontWeight: "bold",
+                  marginLeft: isMobile ? "5px" : "15px",
+                  fontSize: isMobile ? "1.5rem" : "2rem", // Adjust font size for mobile
+                  color: "#BBBBBB",
                   textShadow: "none",
                 }}
               >
-                Sanofi green
+                +20 128 699 7506
               </Typography>
             </Box>
           </Grid>
-
-          {/* Sponsor 3 */}
-          <Grid item xs={12} sm={6} md={4}>
-            <Box textAlign="center">
-              <img
-                src="/ecct.png" // Replace with actual image path
-                alt="Ecct panel builder"
-                style={{ width: "300px", height: "250px", borderRadius: "10%" }}
-              />
+          {/* Facebook */}
+          <Grid item>
+            <Box display="flex" alignItems="center">
+              <IconButton
+                href="https://www.facebook.com/abanoub.girgis.56"
+                target="_blank"
+                rel="noopener noreferrer"
+                sx={{ color: "#fff" }}
+              >
+                <FacebookIcon sx={{ fontSize: 50, color: "#4267B2" }} />
+              </IconButton>
               <Typography
-                variant="h4"
+                variant="body1"
                 sx={{
-                  marginTop: "10px",
-                  color: "#194662",
-                  fontWeight: "bold",
+                  marginLeft: isMobile ? "5px" : "15px",
+                  fontSize: isMobile ? "1.5rem" : "2rem", // Adjust font size for mobile
+                  color: "#BBBBBB",
                   textShadow: "none",
                 }}
               >
-                Ecct panel builder
+                Abanoub Girgis
               </Typography>
             </Box>
           </Grid>
@@ -87,4 +118,4 @@ const Sponsors = () => {
   );
 };
 
-export default Sponsors;
+export default Contact;
