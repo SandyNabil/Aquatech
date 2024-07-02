@@ -4,7 +4,7 @@ import { styled } from "@mui/system";
 
 const Section = styled(Box)(({ theme }) => ({
   height: "75vh",
-  marginBottom: "50px",
+  marginBottom: "20px",
   display: "grid",
   gridTemplateColumns: "1fr 1fr 1fr", // Three equal columns
   gap: theme.spacing(0.1), // Gap between sections
