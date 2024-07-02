@@ -28,7 +28,7 @@ const theme = createTheme({
       fontWeight: 600,
       textShadow:"none",
       "@media (max-width: 768px)": {
-        fontSize: "2rem",
+        fontSize: "3rem",
       },
     },
     h5: {
