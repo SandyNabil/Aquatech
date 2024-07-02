@@ -1,4 +1,3 @@
-// src/components/Introduction.js
 import React, { useEffect, useState, useRef } from "react";
 import { Container, Typography, useMediaQuery, useTheme } from "@mui/material";
 import { styled } from "@mui/material/styles";
@@ -69,6 +68,7 @@ const Introduction = () => {
   const totalSlides = slides.length;
   const slideContainerRef = useRef(null);
 
+  // Commented out the automatic sliding effect
   // useEffect(() => {
   //   const interval = setInterval(() => {
   //     handleNext();
