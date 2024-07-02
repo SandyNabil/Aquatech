@@ -58,8 +58,8 @@ const Contact = () => {
               <Typography
                 variant="body1"
                 sx={{
-                  marginLeft: "15px",
-                  fontSize: isMobile ? "1rem" : "1.5rem", // Smaller font size for mobile
+                  marginLeft: isMobile ? "7px" : "15px",
+                  fontSize: isMobile ? "0.7rem" : "1.5rem", // Smaller font size for mobile
                   color: "#BBBBBB",
                   textShadow: "none",
                 }}
@@ -78,7 +78,7 @@ const Contact = () => {
               <Typography
                 variant="body1"
                 sx={{
-                  marginLeft: "15px",
+                  marginLeft: isMobile ? "7px" : "15px",
                   fontSize: isMobile ? "1.5rem" : "2rem", // Adjust font size for mobile
                   color: "#BBBBBB",
                   textShadow: "none",
@@ -102,7 +102,7 @@ const Contact = () => {
               <Typography
                 variant="body1"
                 sx={{
-                  marginLeft: "15px",
+                  marginLeft: isMobile ? "7px" : "15px",
                   fontSize: isMobile ? "1.5rem" : "2rem", // Adjust font size for mobile
                   color: "#BBBBBB",
                   textShadow: "none",
